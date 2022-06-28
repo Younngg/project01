@@ -1,0 +1,44 @@
+
+/* 헤더 */
+header {
+  height: 56px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+}
+
+header .wrap {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .header-left .gnb {
+  border: none;
+  background-color: #19B400;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 900;
+}
+header .header-right .profile {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+main {
+  padding-top: 56px;
+}
+main .wrap {
+  width: 800px;
+  padding: 10px;
+  margin: auto;
+}

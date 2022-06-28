@@ -1,0 +1,23 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.loginForm input {
+  width: 230px;
+  height: 30px;
+  margin-bottom: 20px;
+  text-indent: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.loginForm .loginBtn {
+  background-color: #19b400;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
