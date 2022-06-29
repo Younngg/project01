@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .loginForm input {
   width: 230px;
@@ -12,6 +11,7 @@
   text-indent: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  outline: none;
 }
 .loginForm .loginBtn {
   background-color: #19b400;
