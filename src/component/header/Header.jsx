@@ -7,8 +7,11 @@ const Header = () => {
     localStorage.clear();
     window.location.replace('/login');
   };
+
   return (
-    <div className={styles.gnb}>
+    <div
+      className={localStorage.getItem('login') ? styles.gnb : styles.gnbBlind}
+    >
       <div className={styles.wrap}>
         <h1>Logo</h1>
         <SearchBar />

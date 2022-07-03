@@ -1,58 +1,23 @@
 import React from 'react';
 import styles from './books.module.css';
+import { Link } from 'react-router-dom';
 
-const Books = ({ books }) => {
+const Books = ({ bookData }) => {
   return (
     <ul>
-      <li className={styles.bookBox}>
-        <div className={styles.bookCoverImg}></div>
-        <div className={styles.bookInfoBox}>
-          <p className={styles.bookTitle}>제목</p>
-          <p className={styles.bookAuthor}>작가</p>
-        </div>
-      </li>
-      <li className={styles.bookBox}>
-        <div className={styles.bookCoverImg}></div>
-        <div className={styles.bookInfoBox}>
-          <p className={styles.bookTitle}>제목</p>
-          <p className={styles.bookAuthor}>작가</p>
-        </div>
-      </li>
-      <li className={styles.bookBox}>
-        <div className={styles.bookCoverImg}></div>
-        <div className={styles.bookInfoBox}>
-          <p className={styles.bookTitle}>제목</p>
-          <p className={styles.bookAuthor}>작가</p>
-        </div>
-      </li>
-      <li className={styles.bookBox}>
-        <div className={styles.bookCoverImg}></div>
-        <div className={styles.bookInfoBox}>
-          <p className={styles.bookTitle}>제목</p>
-          <p className={styles.bookAuthor}>작가</p>
-        </div>
-      </li>
-      <li className={styles.bookBox}>
-        <div className={styles.bookCoverImg}></div>
-        <div className={styles.bookInfoBox}>
-          <p className={styles.bookTitle}>제목</p>
-          <p className={styles.bookAuthor}>작가</p>
-        </div>
-      </li>
-      <li className={styles.bookBox}>
-        <div className={styles.bookCoverImg}></div>
-        <div className={styles.bookInfoBox}>
-          <p className={styles.bookTitle}>제목</p>
-          <p className={styles.bookAuthor}>작가</p>
-        </div>
-      </li>
-      <li className={styles.bookBox}>
-        <div className={styles.bookCoverImg}></div>
-        <div className={styles.bookInfoBox}>
-          <p className={styles.bookTitle}>제목</p>
-          <p className={styles.bookAuthor}>작가</p>
-        </div>
-      </li>
+      {bookData.map((book) => {
+        return (
+          <li className={styles.bookBox} key={book.id}>
+            <Link to={`/book/${book.id}`}>
+              <div className={styles.bookCoverImg}></div>
+              <div className={styles.bookInfoBox}>
+                <p className={styles.bookTitle}>{book.title}</p>
+                <p className={styles.bookAuthor}>{book.author}</p>
+              </div>
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 };

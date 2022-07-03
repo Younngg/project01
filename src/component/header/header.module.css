@@ -7,6 +7,10 @@
   top: 0;
 }
 
+.gnbBlind {
+  display: none;
+}
+
 .wrap {
   margin: auto;
   max-width: 1200px;

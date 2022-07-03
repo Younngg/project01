@@ -22,12 +22,16 @@ ul {
 }
 
 .bookInfoBox {
+  width: 130px;
   text-align: center;
 }
 .bookTitle {
-  font-size: 15px;
+  font-size: 13px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .bookAuthor {
-  font-size: 13px;
+  font-size: 11px;
 }
